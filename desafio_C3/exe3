@@ -1,0 +1,19 @@
+nivel = int(input("Digite o nível do professor (1, 2 ou 3): "))
+
+# Validação do nível do professor
+if nivel < 1 or nivel > 3:
+    print("O nível digitado não é válido!")
+else:
+    horas_aula = float(input("Digite a quantidade de horas/aula dadas: "))
+    
+    # Definição do valor da hora/aula de acordo com o nível
+    if nivel == 1:
+        valor_hora = 12.00
+    elif nivel == 2:
+        valor_hora = 17.00
+    else:  # nivel == 3
+        valor_hora = 25.00
+        
+    # Cálculo e Saída
+    salario = horas_aula * valor_hora
+    print(f"Seu salário é de R$ {salario:.2f}")
