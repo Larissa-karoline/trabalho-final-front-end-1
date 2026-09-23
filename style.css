@@ -1,0 +1,195 @@
+
+/*Configurações gerais e cores do site */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif; /*Fonte do site*/
+    background-color:#121212; /*Cor do fundo do site */
+    color: #e0e0e0; /*Cor cinza claro do texto */
+    line-height: 1.6; /*Espaçamento entre linhas */
+}
+
+/* Links */
+a {
+    color: #dfb76c; /*Cor do link */
+    text-decoration: none;
+    transition: color 0.3s ease; /*Transição suave para a cor do link */
+}
+
+a:hover {
+    color: #fff; /*Cor do link ao passar o mouse */
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)), url('header-background.jpg') no-repeat center center/cover; /*Imagem de fundo do cabeçalho com gradiente */
+    padding: 80px 20px; /*Espaçamento interno do cabeçalho */
+    text-align: center; /*Alinhamento do texto no centro */
+    border-bottom: 2px solid #dfb76c; /*Borda inferior do cabeçalho */
+}
+
+header h1 {
+    font-size: 3rem; /*Tamanho da fonte do título */
+    color: #dfb76c; /*Cor do título */
+    Font-weight: 300; /*Peso da fonte do título */
+    letter-spacing: 3px; /*Espaçamento entre letras do título */
+    margin-bottom: 10px; /*Espaçamento inferior do título */
+    text-transform: uppercase; /*Transforma o texto em maiúsculas */
+}
+
+header h2 {
+    font-size: 2rem; /*Tamanho da fonte do subtítulo */
+    color:#dfb76c; /*Cor do subtítulo */
+    margin-bottom: 20px;
+    font-weight: 400; /*Peso da fonte do subtítulo */
+    border-bottom: 1px solid #333; /*Borda inferior do subtítulo */
+    padding-bottom: 10px; /*Espaçamento inferior do subtítulo */
+}
+
+header h3 {
+    font-size: 1.3rem; /*Tamanho da fonte do subtítulo */
+    color:#fff; /*Cor do subtítulo */
+    margin-bottom: 25px 0 15px 0; /*Espaçamento inferior do subtítulo */
+}
+
+header p {
+    font-size: italic; /*Tamanho da fonte do parágrafo */
+    color: #b3b3b3; /*Cor do parágrafo */
+    font-size: 1.2rem; /*Tamanho da fonte do parágrafo */
+    margin-bottom: 30px; /*Espaçamento inferior do parágrafo */
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none; /*Remove os marcadores da lista */
+    display: flex; /*Exibe os itens da lista em linha */
+    justify-content: center; /*Centraliza os itens da lista */
+    gap: 30px;
+    flex-wrap: wrap;    
+}
+
+nav ul li a {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+}
+
+nav ul li a:hover 
+{
+    border: 1px solid #dfb76c;
+    background-color: rgba(223,183,108,0.05);
+}
+
+/*Conteudo*/
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.secao-padrao {
+    background-color: #1a1a1a; /*blocos um pouco mais claros que o fundo*/
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius:  4px;
+    box-shadow: 0 4px;
+}
+
+/*Listas*/
+main ul, main ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+main ul li {
+    list-style-type: square; 
+}
+
+/*imagens*/
+
+.destaque-imagem {
+    margin: 30px 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+    border: 1px solid #333;
+    filter: brightness(0.9); /*ajusta a foto para ornar com o tema*/
+}
+
+figcaption {
+    font-style: italic;
+    color: #888;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/*Cardápio*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background-color: #151515;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #242424 ;
+    color: #dfb76c
+    text-transform uppercase;
+    font-size:0.9rem;
+    letter-spacing:1px;
+    border-bottom:2px solid #dfb76c;
+}
+
+td {
+    border-bottom: 1px solid #262626;
+    font-size: 1.1rem;
+}
+
+tr:hover td {
+    background-color: #b55706b6; /*efeito ao passar o mouse*/
+}
+
+/*seção de harmonização*/
+
+.conteudo-relacionado {
+    background-color: #59042d;
+    border-left: 4px solid #dfb76c;
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 0 4px 4px 0;
+}
+
+/*Rodapé*/
+
+footer {
+    background-color: #0c0000;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666
+    border-top 1px solid #222;
+}
+
+footer p{
+    margin-bottom: 10px;
+}
